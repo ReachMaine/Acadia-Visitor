@@ -1,0 +1,10 @@
+/*
+Theme Name: Visit Downeast Maine
+Description: Child theme for the Socha Responsive Theme
+Author: Reach Marketing
+Template: socha
+*/
+
+@import url("../socha/style.css");
+
+/* Add your custom CSS Here */

@@ -1,0 +1,279 @@
+@import url("../socha/style.css");
+/*
+Theme Name: Visit Downeast Maine
+Description: Child theme for the Socha Responsive Theme
+Author: Reach Marketing
+Template: socha
+*/
+/* Colors ---------------------------------------------- */
+/* Typography ------------------------------------------ */
+aside .widget-zbtlist {
+  /* sytling for text ad's widget on sidebar */ }
+  aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem {
+    padding-top: 16px;
+    padding-bottom: 10px; }
+    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-title {
+      font-weight: bold;
+      display: block; }
+    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-image a img {
+      width: 100%; }
+    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-content {
+      display: block; }
+    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-ad-link {
+      font-size: 12px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem:not(:last-child) {
+    border-bottom: 1px solid gray; }
+
+/* 
+.biz-today.horizontal aside.widget-zbtlist  { // styling for business today ads underneath content 
+	float: left;
+	border-bottom: 1px solid $zbt-border;
+	.widget-title {
+		text-align: center;
+	}
+	ul.zbt-ad-list  {
+		float: left;
+		padding-left: 0px;
+		li {
+			border-left: 1px solid $zbt-border;
+			width: 30%;
+			float: left;
+			padding-left: 2%;
+			padding-right: 1%;
+			.zbt-title {
+				font-size: 14px;
+				font-weight: bold;
+				display: block;
+				height: 35px;
+			}
+			.zbt-content {
+				display: block;
+			}
+			.zbt-ad-link {
+				font-size: 12px;
+				float: left;
+				text-align: right;
+				width: 100%;
+			}
+		}
+		li:first-child {
+			padding-left: 0px;
+			border-left: 0px;
+		}	
+		li:last-child {
+			padding-right: 0px;
+		}
+	}
+	
+}
+*/
+/* =Theme customization starts here */
+#cobranding {
+  width: 172px;
+  margin: auto;
+  padding-top: 20px; }
+
+section#homepage .flexslider .leftbox .leftmenubox header#leftheader #cobranding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 230px;
+  margin: 0 auto;
+  margin-top: 360px; }
+
+#leaderboard {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.extra-info {
+  background-color: #f0f0f0;
+  outline-color: #17a086;
+  outline-width: medium;
+  outline-style: solid;
+  padding: 20px;
+  margin-bottom: 20px; }
+
+header.page-title h2.category {
+  font-size: 19px; }
+
+/* sidebar stuff */
+section.singlepage .rightsidebar .sidebar ul.sidebarul {
+  margin-top: 0px; }
+
+section.singlepage .rightsidebar .sidebar ul.sidebarul li.widget,
+section.singlepage .rightsidebar .sidebar ul.sidebarul .widget {
+  margin-top: 20px; }
+
+.widget .widget-title {
+  text-align: center;
+  line-height: 22px; }
+
+#rightad span {
+  display: inline-block;
+  width: 100%;
+  height: auto; }
+#rightad img {
+  height: auto; }
+#rightad a:hover {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -webkit-transition: none;
+  -moz-transition: nonet;
+  -ms-transition: none;
+  -o-transition: anone;
+  transition: none; }
+
+/* content stuff */
+section.singlepage .rightside header.preview .titleline .datebox {
+  height: 60px; }
+
+figure .wp-caption-text {
+  padding-top: 5px;
+  text-align: center;
+  color: #A1a1a1;
+  margin: 0 !important;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #bebebe; }
+
+section.singlepage .rightsidebar,
+.rightsidebar {
+  background-color: transparent; }
+  section.singlepage .rightsidebar .sidebarad,
+  .rightsidebar .sidebarad {
+    padding: 10px;
+    margin-bottom: 20px; }
+
+.rpwe_widget .widgettitle {
+  text-align: center; }
+
+.rpwe-block h3.rpwe-title {
+  clear: both;
+  text-align: center; }
+  .rpwe-block h3.rpwe-title a {
+    color: #16a085; }
+.rpwe-block .rpwe-img .rpwe-thumb {
+  border: 0px !important;
+  padding: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important; }
+
+/* old - JIC we switch back 
+.eai-infobox { // all infor boxes, top line in white is "LABEL"  and underneath is title of post
+  .rpwe-block {
+    li.rpwe-li {
+      border-bottom: 0px;
+      h3.rpwe-title:before {
+        text-align: center;
+        display: block;
+        color: white;
+         font-family: Oswald;
+        font-size: 28px;
+        line-height: 33px;
+        width: 80%;
+        padding-bottom: 5px;
+        margin-left: 10%;
+        border-bottom: 1px dashed #A8A8A8;
+        margin-bottom: 5px;
+      }
+      h3.rpwe-title {
+        background-color: $socha-green-box!important;
+        width: 300px;
+        text-align: center;
+        padding-top: 10px;
+        text-align: center;
+        display: block;
+        color: #161616;
+        letter-spacing: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        a {
+          color: #161616;
+        }
+      }
+      h3.rpwe-title:after {
+      }
+    }
+  }
+} */
+.eai-infobox .rpwe-block li.rpwe-li {
+  border-bottom: 0px; }
+  .eai-infobox .rpwe-block li.rpwe-li .rpwe-img img {
+    width: 100%; }
+  .eai-infobox .rpwe-block li.rpwe-li h3.rpwe-title {
+    background-color: #16a085 !important;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+    color: #161616;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    margin-top: 5px; }
+    .eai-infobox .rpwe-block li.rpwe-li h3.rpwe-title a {
+      font-size: 16px;
+      line-height: 18px;
+      color: #161616;
+      margin-bottom: 5px;
+      border-bottom: 1px dashed #A8A8A8; }
+  .eai-infobox .rpwe-block li.rpwe-li h3.rpwe-title:after {
+    text-align: center;
+    display: block;
+    color: white;
+    font-family: Oswald;
+    font-size: 20px;
+    line-height: 33px;
+    width: 80%;
+    padding-top: 5px;
+    margin-left: 10%; }
+
+.eai-infobox.gallery h3.rpwe-title:after {
+  content: "Look"; }
+
+.eai-infobox.top10 h3.rpwe-title:after {
+  content: "List"; }
+
+.eai-infobox.vid h3.rpwe-title:after {
+  content: "Watch"; }
+
+#archives {
+  background: none;
+  margin-top: 0px; }
+
+header.preview .author-title {
+  line-height: 20px; }
+
+.author-description a {
+  color: #16a085; }
+
+/* ----  Media Settings --------------------------------- */
+@media (max-width: 980px) {
+  .rpwe_widget .rpwe-block .rpwe-ul .rpwe-li {
+    width: 30%;
+    padding-left: 1%;
+    float: left; }
+    .rpwe_widget .rpwe-block .rpwe-ul .rpwe-li .rpwe-img .rpwe-thumb {
+      width: 100%; } }
+@media (max-width: 1120px) {
+  section#homepage .flexslider .leftbox .leftmenubox header#leftheader .logo {
+    padding-bottom: 0px; }
+
+  #cobranding {
+    visibility: hidden;
+    display: none; }
+
+  section#homepage .flexslider .leftbox .leftmenubox header#leftheader #cobranding {
+    visibility: hidden;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    height: 0px; } }
+@media (max-width: 1294px) {
+  .home-bottom .threemainboxes .homecustomcontent {
+    margin-left: 0px; } }
+/* end Media Settings ------------------------------------------ */
