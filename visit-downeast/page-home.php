@@ -76,6 +76,11 @@ get_header();?>
             </div>
         <?php } ?>
     </section>
+		<?php if (is_active_sidebar('leaderboard') ) { /* zig */ ?>
+				<div id="leaderboard" >
+						<?php dynamic_sidebar('leaderboard'); ?>
+				</div>
+		<?php } ?>
     <div class="cf"></div>
         <div class="homeonebottomgal">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
