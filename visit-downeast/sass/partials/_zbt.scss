@@ -1,0 +1,39 @@
+$zbt-border: #808080;
+aside .widget-zbtlist { /* sytling for text ad's widget on sidebar */
+	ul.zbt-ad-list {
+		li.zbt-ad-listitem {
+			padding-top: 16px;
+			padding-bottom: 10px;
+			.zbt-title {
+				//font-size: 14px;
+				font-weight: bold;
+				display: block;
+			}
+			.zbt-image {
+				a img {
+					width: 100%;
+				}
+			}
+			.zbt-content {
+				display: block;
+			}
+			.zbt-ad-link {
+				font-size: 12px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+		// division between buzinesses.
+		li.zbt-ad-listitem:not(:first-child) {
+			//padding-top: 16px;
+		}
+		li.zbt-ad-listitem:not(:last-child) {
+			border-bottom: 1px solid $zbt-border;
+		}
+	}
+
+}
+// styling of new bizdir pull.
+.zbzdir-biz-list .zbzdir-biz-listitem {
+	margin-bottom: 10px;
+}

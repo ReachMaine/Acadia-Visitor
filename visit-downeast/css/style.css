@@ -1,74 +1,12 @@
-@import url("../socha/style.css");
 /*
 Theme Name: Visit Downeast Maine
 Description: Child theme for the Socha Responsive Theme
 Author: Reach Marketing
 Template: socha
 */
+@import url("../socha/style.css");
 /* Colors ---------------------------------------------- */
 /* Typography ------------------------------------------ */
-aside .widget-zbtlist {
-  /* sytling for text ad's widget on sidebar */ }
-  aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem {
-    padding-top: 16px;
-    padding-bottom: 10px; }
-    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-title {
-      font-weight: bold;
-      display: block; }
-    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-image a img {
-      width: 100%; }
-    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-content {
-      display: block; }
-    aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem .zbt-ad-link {
-      font-size: 12px;
-      padding-top: 10px;
-      padding-bottom: 10px; }
-  aside .widget-zbtlist ul.zbt-ad-list li.zbt-ad-listitem:not(:last-child) {
-    border-bottom: 1px solid gray; }
-
-/* 
-.biz-today.horizontal aside.widget-zbtlist  { // styling for business today ads underneath content 
-	float: left;
-	border-bottom: 1px solid $zbt-border;
-	.widget-title {
-		text-align: center;
-	}
-	ul.zbt-ad-list  {
-		float: left;
-		padding-left: 0px;
-		li {
-			border-left: 1px solid $zbt-border;
-			width: 30%;
-			float: left;
-			padding-left: 2%;
-			padding-right: 1%;
-			.zbt-title {
-				font-size: 14px;
-				font-weight: bold;
-				display: block;
-				height: 35px;
-			}
-			.zbt-content {
-				display: block;
-			}
-			.zbt-ad-link {
-				font-size: 12px;
-				float: left;
-				text-align: right;
-				width: 100%;
-			}
-		}
-		li:first-child {
-			padding-left: 0px;
-			border-left: 0px;
-		}	
-		li:last-child {
-			padding-right: 0px;
-		}
-	}
-	
-}
-*/
 /* =Theme customization starts here */
 #cobranding {
   width: 172px;
@@ -106,6 +44,9 @@ section.singlepage .rightsidebar .sidebar ul.sidebarul li.widget,
 section.singlepage .rightsidebar .sidebar ul.sidebarul .widget {
   margin-top: 20px; }
 
+section.singlepage .rightsidebar .sidebar.cf ul.sidebarul {
+  margin: 0px; }
+
 .widget .widget-title {
   text-align: center;
   line-height: 22px; }
@@ -126,6 +67,11 @@ section.singlepage .rightsidebar .sidebar ul.sidebarul .widget {
   -ms-transition: none;
   -o-transition: anone;
   transition: none; }
+
+.ad-container span {
+  height: auto;
+  width: 100%;
+  display: inline-block; }
 
 /* content stuff */
 section.singlepage .rightside header.preview .titleline .datebox {
@@ -154,14 +100,23 @@ section.singlepage .rightsidebar,
   clear: both;
   text-align: center; }
   .rpwe-block h3.rpwe-title a {
-    color: #16a085; }
+    color: #16A085; }
 .rpwe-block .rpwe-img .rpwe-thumb {
   border: 0px !important;
   padding: 0px !important;
   margin-top: 0px !important;
   margin-bottom: 0px !important; }
 
-/* old - JIC we switch back 
+#rfw-authors h2.widgettitle {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px; }
+#rfw-authors .rfw_dock h3.entry-title {
+  color: #16A085;
+  font-size: 14px; }
+
+/* old - JIC we switch back
 .eai-infobox { // all infor boxes, top line in white is "LABEL"  and underneath is title of post
   .rpwe-block {
     li.rpwe-li {
@@ -205,7 +160,7 @@ section.singlepage .rightsidebar,
   .eai-infobox .rpwe-block li.rpwe-li .rpwe-img img {
     width: 100%; }
   .eai-infobox .rpwe-block li.rpwe-li h3.rpwe-title {
-    background-color: #16a085 !important;
+    background-color: #16A085 !important;
     width: 100%;
     text-align: center;
     padding-top: 10px;
@@ -249,7 +204,7 @@ header.preview .author-title {
   line-height: 20px; }
 
 .author-description a {
-  color: #16a085; }
+  color: #16A085; }
 
 /* ----  Media Settings --------------------------------- */
 @media (max-width: 980px) {
