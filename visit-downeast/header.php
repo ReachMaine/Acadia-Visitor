@@ -1,7 +1,8 @@
-<?php /* 
-*    mods: 
-*    29Apr15 zig - add broadstreet init js 
-*   5jun15 zig - add space for leaderboard ad 
+<?php /*
+*    mods:
+*     11Sept19 zig - manually add og:image for single posts.
+*    29Apr15 zig - add broadstreet init js
+*   5jun15 zig - add space for leaderboard ad
 */ ?>
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
@@ -13,7 +14,17 @@
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
     <script data-cfasync="false" type="text/javascript" src="http://cdn.broadstreetads.com/init.js"></script>
 <?php wp_head();?>
-	<?php wp_head(); ?>
+	<?php/*  wp_head(); lets only do thi once */ ?>
+	<?php /* zig 11Sep18 trying to add meta name=thumbnail to post */
+	if (is_single() ) {
+		global $post;
+		$image_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'facebook_share');
+		echo '<!-- is single -->';
+		if ($image_thumbnail) {
+			echo '<meta property="og:image" content="'.$image_thumbnail[0].'">';
+		}
+	}
+?>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body <?php body_class(); if(is_object($post)) { echo 'style="'; if(ale_get_meta('custompagebackground')){echo 'background-image:url('.ale_get_meta('custompagebackground').');';} if(ale_get_meta('custompagecss')){ echo ale_get_meta('custompagecss');}echo '"';} ?> >
