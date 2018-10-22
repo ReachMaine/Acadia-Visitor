@@ -227,7 +227,16 @@ header.preview .author-title {
     display: none;
     margin: 0px;
     padding: 0px;
-    height: 0px; } }
+    height: 0px; }
+  section#homepage .flexslider .flex-viewport {
+    padding-top: 38px; }
+
+  #leftnav .social.cf .mobsocialicons,
+  #mobilenav .social.cf .mobsocialicons {
+    margin: auto; } }
+@media (min-width: 1121px) {
+  section#homepage .flexslider .leftbox .leftmenubox header#leftheader nav#leftnav {
+    margin-top: 132px; } }
 @media (max-width: 1294px) {
   .home-bottom .threemainboxes .homecustomcontent {
     margin-left: 0px; } }

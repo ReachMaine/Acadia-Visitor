@@ -29,12 +29,27 @@
 		visibility: hidden;
 		display: none;
 	}
-	section#homepage .flexslider .leftbox .leftmenubox header#leftheader #cobranding {
-	  	visibility: hidden;
-		display: none;
-		margin: 0px;
-		padding: 0px;
-		height: 0px;
+	section#homepage .flexslider {
+		.leftbox .leftmenubox header#leftheader #cobranding {
+			 	visibility: hidden;
+				display: none;
+				margin: 0px;
+				padding: 0px;
+				height: 0px;
+			}
+		  .flex-viewport { // push slideshow down s.t. social icons dont overlap
+					padding-top: 38px;
+			}
+	}
+	#leftnav .social.cf .mobsocialicons,
+	#mobilenav .social.cf .mobsocialicons {
+		margin: auto;
+	}
+
+}
+@media (min-width: 1121px) {
+	section#homepage .flexslider .leftbox .leftmenubox header#leftheader nav#leftnav {
+		margin-top: 132px;
 	}
 }
 @media (max-width: 1294px) {
