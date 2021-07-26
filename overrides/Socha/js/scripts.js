@@ -1,16 +1,17 @@
 // add your custom scripts here
 // as the page loads, call these scripts
-// 27July21 - zig     change .load to .on('load')
+// 27July21 - zig     change .load to .on('load') * .live("click") to .on("click")
 jQuery(function($) {
     var scrollstatus = $('html').data('scroll');
     var getcolor = $('.topline #rel-top').css('background-color');
 
     /*Skin Selector*/
-    $('.leftselectorbox').live('click',function(){
+    // zig change .live to .on("click")
+    $('.leftselectorbox').on('click',function(){
         $(this).addClass('boxeropened');
         $('.styleselectorbox').css('margin-right','0');
 
-        $('.ckeckcol').live('click',function(){
+        $('.ckeckcol').on('click',function(){
             var curcolor = $(this).data('col');
             var curlink = $(this).data('link');
             $.cookie('sochacolor', curcolor, { path: '/' });
@@ -22,7 +23,7 @@ jQuery(function($) {
             $(this).addClass('active');
         });
 
-        $('.ckeckpat').live('click',function(){
+        $('.ckeckpat').on('click',function(){
             var curpat = $(this).data('pat');
             var curlink = $(this).data('link');
             $.cookie('sochapat', curpat, { path: '/' });
@@ -34,7 +35,7 @@ jQuery(function($) {
             $(this).addClass('active');
         });
 
-        $('.boxeropened').live('click',function(){
+        $('.boxeropened').on('click',function(){
             $('.styleselectorbox').css('margin-right','-227px');
             $(this).removeClass('boxeropened');
         });
@@ -92,7 +93,7 @@ jQuery(function($) {
     });
 
         //Toggle Video on about page
-        $('.videotitle').live('click',function(){
+        $('.videotitle').on('click',function(){
            $('.videocode').toggle();
             if(scrollstatus == 'scroll') {
                 $("html").getNiceScroll().resize();
@@ -100,7 +101,7 @@ jQuery(function($) {
         });
 
         //Toggle on About Three page
-        $('.iconplu').live('click',function(){
+        $('.iconplu').on('click',function(){
             $(this).parent().next().toggle(300);
             var butstyle = $(this).text();
             if(butstyle == "-"){
