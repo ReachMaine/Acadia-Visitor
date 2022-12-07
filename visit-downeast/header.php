@@ -14,7 +14,7 @@
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
     <script data-cfasync="false" type="text/javascript" src="http://cdn.broadstreetads.com/init.js"></script>
 <?php wp_head();?>
-	<?php/*  wp_head(); lets only do thi once */ ?>
+	<?php /*  wp_head(); lets only do thi once */ ?>
 	<?php /* zig 11Sep18 trying to add meta name=thumbnail to post */
 	if (is_single() ) {
 		global $post;

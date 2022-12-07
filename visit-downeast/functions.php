@@ -12,7 +12,7 @@
 	}	
 
 	
-	add_action('after_setup_theme', ea_setup);
+	add_action('after_setup_theme', 'ea_setup');
 	/**  ea_setup
 	*  init stuff that we have to init after the main theme is setup.
 	* 
